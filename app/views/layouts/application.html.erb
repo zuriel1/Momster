@@ -5,10 +5,33 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
+<div id="container">
+  <header>
+    <nav>
+      <ul id="nav">
+        <li><a href="index"><h1 class="title">Momster</h1></a></li>
+    </br></br></br></br>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </nav>
+
+      <br/>
+  </header>
+  <div class="wrapper">
+    <div class="border"></div>
+    </nav>
+
 
 <%= yield %>
 
 </body>
 </html>
+
+
