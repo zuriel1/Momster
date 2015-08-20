@@ -12,9 +12,19 @@
   <header>
     <nav>
       <ul id="nav">
-        <li><a href="index"><h1 class="title">Momster</h1></a></li>
+        
+<%= link_to 'Nomster', root_path, :class => 'title' %> 
     </br></br></br></br>
-        <li><a href="menu.html">Menu</a></li>
+        
+<li>
+     <li>
+  <%= link_to new_place_path do %>
+    <i class="glyphicon glyphicon-pencil"></i>
+    New Place
+  <% end %>
+</li>
+
+    </li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="reviews.html">Reviews</a></li>
         <li><a href="contact.html">Contact</a></li>
