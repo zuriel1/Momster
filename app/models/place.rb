@@ -6,6 +6,6 @@ class Place < ActiveRecord::Base
   after_validation :geocode
   
   validates :name, :presence => true
-	validates :dscription, :presence => true
+	validates :description, :presence => true
 	validates :address, :presence => true
 end
