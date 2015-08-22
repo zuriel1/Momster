@@ -8,36 +8,47 @@
 
 </head>
 <body>
-<div id="container">
-  <header>
-    <nav>
-      <ul id="nav">
+  <div id="container">
+    <header>
+      <nav>
+        <ul id="nav">
+
+          <%= link_to 'Momster', root_path, :class => 'title' %> 
+        </br></br></br></br>
         
-<%= link_to 'Nomster', root_path, :class => 'title' %> 
-    </br></br></br></br>
-        
-<li>
-     <li>
-  <%= link_to new_place_path do %>
-    <i class="glyphicon glyphicon-pencil"></i>
-    New Place
-  <% end %>
-</li>
+        <li>
+         <li>
+          <%= link_to new_place_path do %>
+          <i class="glyphicon glyphicon-pencil"></i>
+          New Place
+          <% end %>
+        </li>
 
-    </li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      </li>
 
-    </nav>
 
-      <br/>
-  </header>
-  <div class="wrapper">
-    <div class="border"></div>
-    </nav>
+      <% if user_signed_in? %>
+      <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
+      <% else %>
+      <li><%= link_to 'Sign in', new_user_session_path %></li>
+      <li><%= link_to 'Sign up', new_user_registration_path %></li>
+      <% end %>
 
+    </ul>
+
+  </nav>
+
+  <br/>
+</header>
+<div class="wrapper">
+  <div class="border"></div>
+</nav>
+<% if notice.present? %>
+<p class="alert alert-info"><%= notice %></p>
+<% end %>
+<% if alert.present? %>
+<p class="alert alert-danger"><%= alert %></p>
+<% end %>
 
 <%= yield %>
 
