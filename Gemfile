@@ -26,6 +26,7 @@ gem 'turbolinks'
 gem 'bootstrap-sass', '3.3.4.1'
 
 gem 'will_paginate'
+gem 'carrierwave'
 
 gem 'simple_form'
 gem "geocoder"
