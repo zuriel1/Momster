@@ -27,7 +27,7 @@ gem 'bootstrap-sass', '3.3.4.1'
 
 gem 'will_paginate'
 gem 'carrierwave'
-
+gem "fog", "~> 1.3.1"
 gem 'simple_form'
 gem "geocoder"
 gem "figaro", ">= 1.0.0"
