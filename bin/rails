@@ -4,6 +4,3 @@ require_relative '../config/boot'
 require 'rails/commands'
 
 
-Signal.trap("TERM") do
-   Kernel.exit!
- end
