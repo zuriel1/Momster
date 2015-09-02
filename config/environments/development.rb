@@ -8,7 +8,7 @@ Momster::Application.configure do
     #domain: "example.com",
     #authentication: "plain",
     #enable_starttls_auto: true,
-   # user_name: ENV['GMAIL_ADDRESS'],
+    #user_name: ENV['GMAIL_ADDRESS'],
     #password: ENV['GMAIL_PASSWORD']
   #}
 

@@ -10,14 +10,15 @@
 <body>
   <div id="container">
     <header>
+      <div class="container">
       <nav>
+          <%= link_to 'Momster', root_path, :class => 'title' %> 
         <ul id="nav">
 
-          <%= link_to 'Momster', root_path, :class => 'title' %> 
-        </br></br></br></br>
-        
-        <li>
+ 
+        </br>        
          <li>
+          <li>
           <%= link_to new_place_path do %>
           <i class="glyphicon glyphicon-pencil"></i>
           New Place
@@ -26,8 +27,8 @@
 
       </li>
 
-
       <% if user_signed_in? %>
+    <li><%= link_to 'My Profile', user_path(current_user) %></li>
       <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
       <% else %>
       <li><%= link_to 'Sign in', new_user_session_path %></li>
@@ -35,10 +36,9 @@
       <% end %>
 
     </ul>
-
   </nav>
+</div>
 
-  <br/>
 </header>
 <div class="wrapper">
   <div class="border"></div>

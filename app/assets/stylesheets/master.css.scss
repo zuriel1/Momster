@@ -66,7 +66,7 @@ strong {
 body {
 	background: #f5f0e0;
 	font-family: Century Gothic, sans-serif;
-	color: #252525;
+	#color: #252525;
 	font-size: 14px;
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.10);
 }
@@ -98,7 +98,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
 	color: #9c5959;
 	text-decoration: none;
-	border-bottom: 1px dotted #9c5959;
 }
 
 .clear {
@@ -167,7 +166,9 @@ a {
 	box-shadow: inset 0px -3px 1px rgba(255, 255, 255, 1), inset 0 0px 3px rgba(0, 0, 0, 0.9);
 }
 
-
+nav{
+	height: 80px;
+}
 ul#nav {
 	font-family: 'Lobster13Regular', cursive;
 	width: 1000px;
@@ -175,17 +176,18 @@ ul#nav {
 	text-align: center;
 	font-size: 22px;
 	letter-spacing: 1px;
+	
 }
+
 ul#nav li {
 	float: left;
 	list-style: none;
 }
-left_align {
-	padding: 95px;
-}
+
 .clear {
     clear: both;
 }
+
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
@@ -198,14 +200,15 @@ blockquote:before {
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
-  margin-right: 0.25em;
+    margin-right: 0.25em;
   vertical-align: -0.4em;
 }
 blockquote p {
   display: inline;
 }
-
-
+header {
+background: #00FFFF;
+}
 
 ul#nav li a {
 	letter-spacing: 2px;
@@ -232,15 +235,9 @@ ul#nav li a:hover, ul#nav li .current {
 	-ms-transition: all .20s ease-out;
 	transition: all .20s ease-out;
 }
-.border {
-	height: 3px;
-	border-top: 1px solid #9c5959;
-	border-bottom: 1px dashed #9c5959;
-}
 
-.wrapper {
-	margin-top: 30px;
-}
+
+
 p {
 	font-size: 14px;
 	font-family: Century Gothic, sans-serif;
@@ -249,21 +246,43 @@ p {
 
 
 .booyah-box {
-	font-size: 20px;
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
   background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top:10px;
+  margin-bottom: 15px;
+  padding:20px;
 }
 
 .glyphicon{
 	color: black;
 }
 
-blockquote {
-	background: transparent;
-	padding: 30px;
-	font-style: italic;
+
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    height: 550px;
+        width: 100%;
+        }
+
+.carousel-caption {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight:100;
+    text-shadow: rgba(0,0,0,0.95) 2px 2px;
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    position:absolute;
+    left:0;
+}
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.black {
+	background-color: black;
+	height: 10px;
 }
